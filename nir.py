@@ -1,5 +1,6 @@
 from telegram.ext import Updater,CommandHandler,MessageHandler,Filters
 from Adafruit_IO import Client,Data,Feed
+import os
 def Turnoff(update, context):
   context.bot.send_message(chat_id=update.effective_chat.id, text="Light turned off")
   context.bot.send_photo(chat_id=update.effective_chat.id,photo='https://i.dlpng.com/static/png/7501809_preview.png')
